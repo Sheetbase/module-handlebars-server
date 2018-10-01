@@ -10,8 +10,8 @@
  *
  */
  
-declare const handlebarsExports: {(): any};
-const handlebars = handlebarsExports();
+declare const handlebarsModuleExports: {(): any};
+const handlebars = handlebarsModuleExports();
 const Handlebars = handlebars;
 
 for (const key of Object.keys(handlebars)) {
