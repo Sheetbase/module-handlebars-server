@@ -2,7 +2,7 @@
  * 
  * Name: @sheetbase/handlebars-server
  * Description: Handlebars for Google apps script.
- * Version: 4.0.11
+ * Version: 4.0.11-1
  * Author: Sheetbase
  * Homepage: https://sheetbase.net
  * License: MIT

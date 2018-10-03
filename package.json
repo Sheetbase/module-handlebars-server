@@ -1,11 +1,15 @@
 {
 	"name": "@sheetbase/handlebars-server",
 	"type": "module",
-	"version": "4.0.11",
+	"version": "4.0.11-1",
 	"description": "Handlebars for Google apps script.",
 	"author": "Sheetbase",
 	"homepage": "https://sheetbase.net",
 	"license": "MIT",
+	"scripts": {
+		"build": "sheetbase-app-scripts build",
+		"push": "sheetbase-app-scripts push"
+	},
 	"keywords": [
 		"google-apps-script",
 		"view-engine",
@@ -20,6 +24,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
+		"@sheetbase/app-scripts": "0.0.2",
 		"@types/google-apps-script": "0.0.28"
 	}
 }

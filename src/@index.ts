@@ -2,7 +2,7 @@
  * 
  * Name: @sheetbase/handlebars-server
  * Description: Handlebars for Google apps script.
- * Version: 4.0.11
+ * Version: 4.0.11-1
  * Author: Sheetbase
  * Homepage: https://sheetbase.net
  * License: MIT
@@ -11,14 +11,11 @@
  */
  
 declare const handlebarsModuleExports: {(): any};
-const handlebars = handlebarsModuleExports();
-const Handlebars = handlebars;
 
-for (const key of Object.keys(handlebars)) {
-	this[key] = handlebars[key];
+export const Handlebars = handlebarsModuleExports();
+for (const prop of Object.keys({... Handlebars, ... Object.getPrototypeOf(Handlebars)})) {
+	this[prop] = Handlebars[prop];
 }
-
-export { handlebars, Handlebars };
 
 export function sheetbase_handlebars_example1(): void {
 	const source: string = '<p>Hello, my name is {{name}}. ' +
