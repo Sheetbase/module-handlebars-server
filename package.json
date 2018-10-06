@@ -1,13 +1,13 @@
 {
 	"name": "@sheetbase/handlebars-server",
 	"type": "module",
-	"version": "4.0.11-1",
+	"version": "4.0.11-2",
 	"description": "Handlebars for Google apps script.",
 	"author": "Sheetbase",
 	"homepage": "https://sheetbase.net",
 	"license": "MIT",
 	"scripts": {
-		"build": "sheetbase-app-scripts build",
+		"build": "sheetbase-app-scripts build --vendor --ugly",
 		"push": "sheetbase-app-scripts push"
 	},
 	"keywords": [
@@ -24,7 +24,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@sheetbase/app-scripts": "0.0.2",
+		"@sheetbase/app-scripts": "0.0.3",
 		"@types/google-apps-script": "0.0.28"
 	}
 }

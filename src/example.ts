@@ -1,14 +1,11 @@
-declare const handlebarsModuleExports: {(): any};
+declare const HandlebarsModule: {()};
+var Handlebars = Handlebars || HandlebarsModule();
 
-export function Handlebars() {
-	return handlebarsModuleExports();
-}
-
-export function sheetbase_handlebars_example1(): void {
+export function example1(): void {
 	const source: string = '<p>Hello, my name is {{name}}. ' +
 							'I am from {{hometown}}. I have {{kids.length}} kids:</p>' +
 							'<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>';
-	const template = Handlebars().compile(source);
+	const template = Handlebars.compile(source);
 	const data = {
 					name: 'Alan',
 					hometown: 'Somewhere, TX',
