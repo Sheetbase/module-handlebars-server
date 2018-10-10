@@ -6,8 +6,8 @@ var module = module || { exports: exports };
  * Export name: Handlebars
  * Description: Handlebars for Google apps script.
  * Version: 4.0.11-3
- * Author: Sheetbase
- * Homepage: https://sheetbase.net
+ * Author: Yehuda Katz
+ * Homepage: http://www.handlebarsjs.com/
  * License: MIT
  * Repo: https://github.com/sheetbase/module-handlebars-server.git
  */
