@@ -1,7 +1,6 @@
 {
 	"name": "@sheetbase/handlebars-server",
-	"type": "module",
-	"version": "4.0.11-3",
+	"version": "4.0.11-4",
 	"description": "Handlebars for Google apps script.",
 	"author": "Yehuda Katz",
 	"homepage": "http://www.handlebarsjs.com/",
@@ -26,7 +25,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@sheetbase/app-scripts": "0.0.7",
+		"@sheetbase/app-scripts": "0.0.14",
 		"@types/google-apps-script": "0.0.28"
 	}
 }

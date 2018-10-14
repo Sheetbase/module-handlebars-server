@@ -1,0 +1,1 @@
+export { HandlebarsModule, Handlebars } from './src';

@@ -1,5 +1,6 @@
-declare const HandlebarsModule: {()};
-var Handlebars = Handlebars || HandlebarsModule();
+import { HandlebarsModule } from '../index';
+
+const Handlebars = HandlebarsModule();
 
 export function example1(): void {
 	const source: string = '<p>Hello, my name is {{name}}. ' +

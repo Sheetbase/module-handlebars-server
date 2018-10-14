@@ -5,7 +5,7 @@ var module = module || { exports: exports };
  * Name: @sheetbase/handlebars-server
  * Export name: Handlebars
  * Description: Handlebars for Google apps script.
- * Version: 4.0.11-3
+ * Version: 4.0.11-4
  * Author: Yehuda Katz
  * Homepage: http://www.handlebarsjs.com/
  * License: MIT
@@ -53,6 +53,7 @@ var f=g.nameLookup(e,b[c],a);return d?[" && ",f]:[" != null ? ",f," : ",e]})},re
 }
 exports.HandlebarsModule = HandlebarsModule;
 /*</sheetbase>*/
-// add to the global namespace
-var proccess = proccess || this;
-proccess['Handlebars'] = HandlebarsModule();
+// add 'Handlebars' to the global namespace
+(function (process) {
+    process['Handlebars'] = HandlebarsModule();
+})(this);
