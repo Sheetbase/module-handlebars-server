@@ -18,10 +18,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sheetbase/module-handlebars-server.git"
+		"url": "https://github.com/sheetbase/handlebars-server.git"
 	},
 	"bugs": {
-		"url": "https://github.com/sheetbase/module-handlebars-server/issues"
+		"url": "https://github.com/sheetbase/handlebars-server/issues"
 	},
 	"dependencies": {},
 	"devDependencies": {
